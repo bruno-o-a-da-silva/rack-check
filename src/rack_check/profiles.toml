@@ -1,0 +1,31 @@
+# Illustrative values only. Not a manufacturer's table and not a structural design standard.
+# Real rack capacities come from the manufacturer's load tables, checked by a qualified engineer.
+
+[steel]
+e_gpa = 200.0       # Young's modulus of structural steel
+yield_mpa = 355.0   # yield strength, illustrative grade
+
+[limits]
+deflection_ratio = 200.0  # sag may not exceed span / 200
+stress_factor = 1.5       # bending stress may not exceed yield / 1.5
+
+# Box beams, section properties about the bending axis. Price per beam in BRL.
+[profiles.B80]
+i_mm4 = 600000
+w_mm3 = 15000
+price_brl = "180.00"
+
+[profiles.B100]
+i_mm4 = 1200000
+w_mm3 = 24000
+price_brl = "230.00"
+
+[profiles.B120]
+i_mm4 = 2000000
+w_mm3 = 33000
+price_brl = "290.00"
+
+[profiles.B140]
+i_mm4 = 3100000
+w_mm3 = 44000
+price_brl = "360.00"
